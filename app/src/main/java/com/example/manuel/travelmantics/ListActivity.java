@@ -26,7 +26,6 @@ public class ListActivity extends AppCompatActivity {
     private ChildEventListener mchildEventListener;
     private static FirebaseAnalytics mFirebaseAnalytics;
 */
-private static int RC_SIGN_IN=123;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

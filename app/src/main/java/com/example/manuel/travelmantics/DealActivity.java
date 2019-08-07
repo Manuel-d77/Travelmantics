@@ -192,8 +192,8 @@ public class DealActivity extends AppCompatActivity {
             int width= Resources.getSystem().getDisplayMetrics().widthPixels;
             Picasso.with(this)
                     .load(url)
-                    .resize(width,width/1*3)
-                    .centerInside()
+                    .resize(width,width*2/3)
+                    .centerCrop()
                     .into(imageView);
         }
     }

@@ -23,7 +23,6 @@ public class FirebaseUtil {
     public static FirebaseDatabase mFirebaseDatabase;
     public static DatabaseReference mDatabaseReference;
     private static FirebaseUtil mFirebaseUtil;
-   // private static FirebaseAnalytics mFirebaseAnalytics;
     public static FirebaseAuth mFirebaseAuth;
     public static FirebaseStorage mStorage;
     public static StorageReference mStorageRef;
@@ -40,7 +39,6 @@ public class FirebaseUtil {
         if(mFirebaseUtil ==null){
             mFirebaseUtil = new FirebaseUtil();
             mFirebaseDatabase = FirebaseDatabase.getInstance();
-            //mFirebaseAnalytics = FirebaseAnalytics.getInstance();
             mFirebaseAuth=FirebaseAuth.getInstance();
             caller=callerActivity;
             mAuthListener= new FirebaseAuth.AuthStateListener() {
@@ -69,7 +67,6 @@ public class FirebaseUtil {
 
     public static void detachListener(){
         mFirebaseAuth.removeAuthStateListener(mAuthListener);
-
     }
     private static void signIn(){
         // Choose authentication providers
